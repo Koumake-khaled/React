@@ -1,0 +1,29 @@
+.button a {
+    font-size: 14px;
+    color: var(--color-light);
+    border-radius: 999px;
+    padding: 12px 30px;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    margin: 0 auto;
+
+}
+
+.primary-btn a{
+    background-color: var(--color-primary);
+
+}
+
+.primary-btn a:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+
+.secodery-btn a{
+    border:  1px solid var(--color-primary);
+}
+
+.secodery-btn a:hover{
+    border: 1px solid var(--color-light);
+    color: var(--color-primary);
+}

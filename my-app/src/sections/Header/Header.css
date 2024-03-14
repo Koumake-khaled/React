@@ -1,0 +1,16 @@
+.cyborg-navbar{
+    min-height: 100px;
+}
+.nav-link{
+    color: var(--color-light);
+}
+.dropdown-item{
+    color: var(--color-light);
+}
+/* .nav-link :hover{
+    color: red;
+} */
+.dropdown-menu li a{
+    color: var(--color-darkest);
+    text-align: right;
+}

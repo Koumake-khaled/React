@@ -1,0 +1,7 @@
+export {default as Header} from './Header/Header'
+export {default as Hero} from './Hero/Hero'
+export {default as MostPopular} from './MostPopular/MostPopular'
+export {default as Footer} from './Footer/Footer'
+export {default as Login} from './Login/Login'
+export {default as SignUp} from './SignUp/SignUp'
+export {default as OPinion} from './Opinion/Opinion'

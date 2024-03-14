@@ -1,0 +1,23 @@
+.card-wrapper1 {
+    background-color: var(--color-darkest);
+    border-radius: 50%;
+    padding:calc(var(--padding-primary)/3) ;
+    text-align: center;
+   }
+ 
+  .title h4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .Categories-image {
+    margin: 20px;
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

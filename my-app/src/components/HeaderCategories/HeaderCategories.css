@@ -1,0 +1,6 @@
+.header-cate h4{
+    font-size: 36px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    text-align: right;    
+}
