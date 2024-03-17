@@ -1,5 +1,5 @@
 import './Profile.css'
-import {MostPopular,Login,ero} from '../../sections/index'
+import {MostPopular,Login} from '../../sections/index'
 const Profile = () => {
   return (
     <> 

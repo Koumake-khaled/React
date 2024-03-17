@@ -3,8 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
-import NavIte , {NavIteDropDown} from '../../components/NavIte/NavIte'
-import {SectioWrapper,PrimaryButtons,Text,SecondaryButtons} from '../..//components/index'
+import {SectioWrapper,PrimaryButtons,SecondaryButtons} from '../..//components/index'
 function SignUp() {
   return (
     <>
@@ -12,10 +11,10 @@ function SignUp() {
        <Form>
       <Row className="checkbox-label">
         <Col>
-          <Form.Control placeholder=" الاسم الأخير" style={{ textAlign: "right"}} />
+          <Form.Control placeholder="الاسم الأول" style={{ textAlign: "right"}} />
         </Col>
         <Col>
-          <Form.Control placeholder="الاسم الأول" style={{ textAlign: "right"}} />
+          <Form.Control placeholder="الاسم الأخير" style={{ textAlign: "right"}} />
         </Col>
       </Row>
       {/* ----------------------- */}
@@ -48,10 +47,9 @@ function SignUp() {
   </div>
 </Col>
       <Form.Group className="mb-3">
-      <Link to="/signup">
+      <Link to="/steponepage">
         <PrimaryButtons controlId="loginButton">إنشاء حساب</PrimaryButtons>
       </Link>
-      
        </Form.Group>
     </Form>
        </SectioWrapper>

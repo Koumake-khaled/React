@@ -17,16 +17,16 @@ const Header = () => {
           <Link to="/"  className="nav-link">الصفحة الرئيسية</Link>
            </NavIte>
   <NavIte>
-           <a href="/#" className="nav-link">المفضلات</a>  </NavIte>
+           <Link to="/#" className="nav-link">المفضلات </Link> </NavIte>
 
              <NavIteDropDown>
-                    <a href="/#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">التفاصيل</a>
+                    <Link to="/#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">التفاصيل</Link>
                     <ul className="dropdown-menu">
-                        <li><a href="/#" className="dropdown-item">الفئات</a></li>
-                        <li><a href="/#" className="dropdown-item">الفلترة</a></li>
+                        <li><Link to="/#" className="dropdown-item">الفئات</Link></li>
+                        <li><Link to="/#" className="dropdown-item">الفلترة</Link></li>
                     </ul>
                     </NavIteDropDown>
-                <NavIte> <a href="/#" className="nav-link">الاشعارات</a></NavIte>
+                <NavIte> <Link to="/#" className="nav-link">الاشعارات</Link></NavIte>
                 <NavIte>
                 <Link to="/profile" className="nav-link">الصفحة الشخصية</Link>
                 </NavIte>

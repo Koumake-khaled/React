@@ -13,13 +13,13 @@
 .most-popular-item-image{
     height: 180px;
     width: 100%;
-    border-radius: 12.5px;
+    border-radius: 6.5px;
     margin-bottom: calc(var(--margin-primary)/2);
 }
 
 .most-popular-item-content{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     
 }
 .most-popular-item-title{

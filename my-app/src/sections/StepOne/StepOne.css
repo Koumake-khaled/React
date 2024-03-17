@@ -1,0 +1,14 @@
+.responsive-button {
+    width: 100%;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  @media (min-width: 768px) {
+    .responsive-button {
+      width: auto;
+      max-width: none;
+    }
+  }
