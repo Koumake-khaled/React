@@ -17,7 +17,7 @@ const Card = (props) => {
                         {props.title} <br />
                         <span>{props.category}</span>
                     </h4>
-              
+           z   
                 </div> 
                 <div style={{ display: 'flex', alignItems: 'center' }}>
   <PrimaryButtons>إضافة الى السلة</PrimaryButtons>

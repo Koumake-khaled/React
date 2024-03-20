@@ -1,3 +1,5 @@
+import StoreItem from './StoreItem'
+
 export {default as Container} from './Container/Container'
 export {default as NavIte} from './NavIte/NavIte'
 export {NavIteDropDown} from './NavIte/NavIte'

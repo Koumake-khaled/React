@@ -1,17 +1,13 @@
 import './MostPopular.css'
-import {Card, SectionHeader,SectioWrapper} from '../..//components/index'
-import MostPopularData from '../../Data/MostPopularData'
+import {SectionHeader,SectioWrapper} from '../..//components/index'
+import Store from '../../components/Store'
+import StoreItem from '../../components/StoreItem'
 const MostPopular = () => {    
-  const cards = MostPopularData.map(card => {
-   return < Card key={card.id} image={card.image} title={card.title} category={card.category} rate={card.rate} download={card.download}/>
-  })
   return (
     <>
      <SectioWrapper>
      <SectionHeader >المٌنتجات</SectionHeader>
-      <div className='most-popular-items' >
-        {cards}
-      </div>
+      <Store/>
       </SectioWrapper>
     </>
   )

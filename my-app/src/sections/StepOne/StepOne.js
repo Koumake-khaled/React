@@ -27,10 +27,12 @@ const StepOne = () => {
   <option value="2">دولار</option>
 </Form.Select>
     </Form.Group>
-    <div style={{ display: "flex", justifyContent: "center", gap: "100px" }}>
+    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'25px'}}>
     <Link to="/steptwopage">
-  <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
-</div>
+    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
+    <Link to="/steptwopage">
+    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
+    </div>
     </Form>
     </SectioWrapper>
     </>

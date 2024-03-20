@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "بلوزة صيفي",
+      "price": 10.99,
+      "imgUrl": "/imgs/popular1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "فخار شمع",
+      "price": 1199,
+      "imgUrl": "/imgs/popular2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "سجاد فلسطيني",
+      "price": 1.05,
+      "imgUrl": "/imgs/popular3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "شمع",
+      "price": 14000,
+      "imgUrl": "/imgs/popular4.jpg"
+    }
+  ]
+  
