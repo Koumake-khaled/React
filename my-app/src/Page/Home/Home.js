@@ -1,5 +1,5 @@
 import './Home.css'
-import { Hero,MostPopular,Login} from '../../sections/index'
+import { Hero,MostPopular} from '../../sections/index'
 
 const Home = () => {
   return (

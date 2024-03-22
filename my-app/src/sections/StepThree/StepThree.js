@@ -55,6 +55,13 @@ const StepThree = () => {
   </Form.Group>
   
 </Form>
+<div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'25px'}}>
+    <Link to="/stepsixpage">
+    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
+    <Link to="/stepsixpage">
+    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
+    </div>
+
 </SectioWrapper>
 </>
   )
