@@ -47,7 +47,7 @@ function SignUp() {
   </div>
 </Col>
       <Form.Group className="mb-3">
-      <Link to="/steponepage">
+      <Link to="/">
         <PrimaryButtons controlId="loginButton">إنشاء حساب</PrimaryButtons>
       </Link>
        </Form.Group>

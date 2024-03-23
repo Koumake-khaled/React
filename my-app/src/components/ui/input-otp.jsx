@@ -5,6 +5,7 @@ import { OTPInput, OTPInputContext } from "input-otp"
 import { cn } from "../../lib/utils"
 
 const InputOTP = React.forwardRef(({ className, containerClassName, ...props }, ref) => (
+  
   <OTPInput
     ref={ref}
     containerClassName={cn("flex items-center gap-2 has-[:disabled]:opacity-50", containerClassName)}

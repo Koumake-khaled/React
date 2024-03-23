@@ -1,7 +1,7 @@
 import './MostPopular.css'
 import {SectionHeader,SectioWrapper} from '../..//components/index'
 import Store from '../../components/Store'
-import StoreItem from '../../components/StoreItem'
+import StoreItem from '../../components/CardStore/StoreItem'
 const MostPopular = () => {    
   return (
     <>

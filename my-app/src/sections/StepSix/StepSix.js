@@ -1,24 +1,26 @@
+import {SectioWrapper} from '../../components/index'
+import { REGEXP_ONLY_DIGITS_AND_CHARS } from "input-otp"
+ 
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "../../components/ui/select.jsx"
-  
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+} from "../../components/ui/input-otp"
+ 
 const StepSix = () => {
   return (
     <div>
-  <Select>
-  <SelectTrigger className="w-[180px]">
-    <SelectValue placeholder="Theme" />
-  </SelectTrigger>
-  <SelectContent>
-    <SelectItem value="light">Light</SelectItem>
-    <SelectItem value="dark">Dark</SelectItem>
-    <SelectItem value="system">System</SelectItem>
-  </SelectContent>
-</Select>
+  
+      <InputOTP maxLength={6} pattern={REGEXP_ONLY_DIGITS_AND_CHARS}>
+      <InputOTPGroup>
+        <InputOTPSlot index={0} />
+        <InputOTPSlot index={1} />
+        <InputOTPSlot index={2} />
+        <InputOTPSlot index={3} />
+        <InputOTPSlot index={4} />
+        <InputOTPSlot index={5} />
+      </InputOTPGroup>
+    </InputOTP>
 
     </div>
   )

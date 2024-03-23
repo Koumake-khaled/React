@@ -32,24 +32,6 @@ nav svg:hover {
     color: var(--color-light);
 }
 
-nav .s1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav img {
-    width: 150px;
-}
-
-nav .s1 .right {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-}
-
 nav .cart {
     position: relative;
     margin: 0px 20px;
@@ -65,28 +47,4 @@ nav .cart {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-}
-
-nav .s2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 3%;
-}
-
-nav .s2 a{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-nav .s2 a:hover{
-    color: var(--color-light);
-}
-
-nav .s3 {
-    display: none;
 }

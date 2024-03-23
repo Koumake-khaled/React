@@ -1,5 +1,5 @@
 import './Header.css'
-import NavIte , {NavIteDropDown} from '../../components/NavIte/NavIte'
+import NavIte from '../../components/NavIte/NavIte'
 import { Link } from 'react-router-dom'
 import {SearchBox} from '../..//components/index'
 import {Button,Dropdown} from 'react-bootstrap'
@@ -42,6 +42,21 @@ const Header = ({ reloadnavbar }) => {
         </button>
         <div className="collapse navbar-collapse" id="mainmenu">
             <ul className="navbar-nav ms-auto">
+            <NavIte>
+                  
+                  <div style={{padding:"2px",margin:"5px"}}>
+                    <li>
+                                    <Dropdown>
+                                        <Dropdown.Toggle variant="" id="dropdown-basic" >المزيد</Dropdown.Toggle >
+    
+                                        <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
+                                            <Dropdown.Item href="/loginpage">تواصل معنا</Dropdown.Item>
+                                            <Dropdown.Item href="/signup">معلومات عنا</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
+                    </li>
+                    </div>
+                    </NavIte>
       <NavIte>
           <Link to="/"  className="nav-link">الصفحة الرئيسية</Link>
            </NavIte>
@@ -53,7 +68,7 @@ const Header = ({ reloadnavbar }) => {
                                     <Dropdown.Toggle variant="" id="dropdown-basic" >الفئات
                                     </Dropdown.Toggle >
 
-                                    <Dropdown.Menu style={{backgroundColor:"var(--color-darkest)",textAlign:"right"}}>
+                                    <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
                                         <Dropdown.Item href="/loginpage">ملابس</Dropdown.Item>
                                         <Dropdown.Item href="/signup">فخار</Dropdown.Item>
                                         <Dropdown.Item href="/user/accountsettings">فن</Dropdown.Item>
@@ -103,9 +118,10 @@ const Header = ({ reloadnavbar }) => {
                                         </svg>
                                     </Dropdown.Toggle >
 
-                                    <Dropdown.Menu style={{backgroundColor:"var(--color-darkest)",textAlign:"right"}}>
+                                    <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
                                         <Dropdown.Item href="/loginpage">تسجيل الدخول</Dropdown.Item>
                                         <Dropdown.Item href="/signup">إنشاء حساب</Dropdown.Item>
+                                        <Dropdown.Item href="/steponepage">إنشاء متجر</Dropdown.Item>
                                         <Dropdown.Item href="/user/accountsettings">الصفحة الشخصية</Dropdown.Item>
                                         <Dropdown.Item href="#">خروج</Dropdown.Item>
                                     </Dropdown.Menu>
