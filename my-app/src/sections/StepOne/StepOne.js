@@ -27,13 +27,15 @@ const StepOne = () => {
   <option value="2">دولار</option>
 </Form.Select>
     </Form.Group>
-    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'25px'}}>
-    <Link to="/steptwopage">
-    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
-    <Link to="/steptwopage">
-    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
-    </div>
     </Form>
+    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'72px', textAlign: "right"}} dir="rtl">
+    <Link to="/stepthreepage">
+    <PrimaryButtons>المتابعة</PrimaryButtons></Link>
+    <Link to="/">
+      <SecondaryButtons>السابق</SecondaryButtons>
+    </Link>
+    </div>
+    
     </SectioWrapper>
     </>
   )

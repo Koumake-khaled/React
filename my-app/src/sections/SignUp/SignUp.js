@@ -46,11 +46,14 @@ function SignUp() {
     </Form.Check.Label>
   </div>
 </Col>
-      <Form.Group className="mb-3">
-      <Link to="/">
-        <PrimaryButtons controlId="loginButton">إنشاء حساب</PrimaryButtons>
-      </Link>
+      <Form.Group className="mb-3">   
        </Form.Group>
+       <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'72px', textAlign: "center"}} dir="rtl">
+
+<Link to="/">
+  <PrimaryButtons controlId="loginButton">إنشاء حساب</PrimaryButtons>
+</Link>
+</div>
     </Form>
        </SectioWrapper>
     </>

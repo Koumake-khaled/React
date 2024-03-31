@@ -2,7 +2,7 @@ import './StepTwo.css'
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import {SectioWrapper,PrimaryButtons} from '../../components/index'
+import {SectioWrapper,PrimaryButtons,SecondaryButtons} from '../../components/index'
 import Figure from 'react-bootstrap/Figure';
 import map from '../../aasets/imgase/map.jpg'
 import Image from 'react-bootstrap/Image';
@@ -28,9 +28,10 @@ const StepTwo = () => {
     <Form.Group className="mb-5" controlId="formBasicEmail"  >
     <Form.Label >حدد موقع استلام الشحنات</Form.Label>
     <br />
-    <Form.Text className="text-muted">
-        يرجى التأكد من صحة الموقع المحدد ليتمكن مندوبي شركات الشحن الوصول له بسهولة
+    <Form.Text className="text-muted2" style={{color:"#A87561",marginBottom:"44px"}}>
+        يرجى التأكد من صحة الموقع المحدد ليتمكن مندوبي شركات الشحن من الوصول له بسهولة
     </Form.Text>
+        <br />
         <br />
     <Image src={map} fluid />
     </Form.Group>
@@ -47,11 +48,12 @@ const StepTwo = () => {
     <Form.Control/>
     </Form.Group>
     </Form>
-    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'25px'}}>
+    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'72px', textAlign: "right"}} dir="rtl">
     <Link to="/stepthreepage">
-    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
-    <Link to="/stepthreepage">
-    <PrimaryButtons>الحفظ والمتابعة</PrimaryButtons></Link>
+    <PrimaryButtons>المتابعة</PrimaryButtons></Link>
+    <Link to="/steponepage">
+      <SecondaryButtons >السابق</SecondaryButtons>
+    </Link>
     </div>
     </SectioWrapper>
     </>

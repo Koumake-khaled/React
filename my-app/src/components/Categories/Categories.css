@@ -3,10 +3,11 @@
     border-radius: 50%;
     padding:calc(var(--padding-primary)/3) ;
     text-align: center;
+
    }
  
-  .title h4{
-    display: flex;
+  .title7 h4{
+    /* display: flex; */
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -15px;
@@ -19,4 +20,21 @@
     height: 200px;
     border: 1px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
   }
+  /* @media screen and (max-width: 768px) {
+    .Categories-image  {
+      margin: 6px;
+      width: 90px;
+      height: 90px;
+     }
+     .card-wrapper1 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px; 
+     }
+   
+     .title{
+      font-size: 4px;
+    }
+    
+    } */

@@ -4,6 +4,8 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartItem from "./CartItem";
 import FormatCurrency from "./FormatCurrency";
 import storeItems from "../Data/storeItem.json";
+import {PrimaryButtons,SecondaryButtons} from './index'
+import { Link } from 'react-router-dom';
 const ShoppingCart = ({ isOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();
   return (
@@ -25,9 +27,10 @@ const ShoppingCart = ({ isOpen }) => {
               }, 0)
             )}
           </div>
-        </Stack>
-      </Offcanvas.Body>
+        </Stack>   
+      </Offcanvas.Body>    
     </Offcanvas>
+    
   );
 };
 

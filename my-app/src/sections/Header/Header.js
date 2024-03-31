@@ -50,8 +50,8 @@ const Header = ({ reloadnavbar }) => {
                                         <Dropdown.Toggle variant="" id="dropdown-basic" >المزيد</Dropdown.Toggle >
     
                                         <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
-                                            <Dropdown.Item href="/loginpage">تواصل معنا</Dropdown.Item>
-                                            <Dropdown.Item href="/signup">معلومات عنا</Dropdown.Item>
+                                        <Dropdown.Item href="/contact">تواصل معنا</Dropdown.Item>
+                                        <Dropdown.Item href="/about">معلومات عنا</Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
                     </li>
@@ -111,21 +111,21 @@ const Header = ({ reloadnavbar }) => {
                   
               <div style={{padding:"2px",margin:"5px"}}>
                 <li>
-                                <Dropdown>
-                                    <Dropdown.Toggle variant="" id="dropdown-basic" >
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" strokeWidth={1.5} stroke="var(--color-dark)" className="w-6 h-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                                        </svg>
-                                    </Dropdown.Toggle >
+                   <Dropdown>
+                       <Dropdown.Toggle variant="" id="dropdown-basic" >
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" strokeWidth={1.5} stroke="var(--color-dark)" className="w-6 h-6">
+                               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                           </svg>
+                       </Dropdown.Toggle >
 
-                                    <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
-                                        <Dropdown.Item href="/loginpage">تسجيل الدخول</Dropdown.Item>
-                                        <Dropdown.Item href="/signup">إنشاء حساب</Dropdown.Item>
-                                        <Dropdown.Item href="/steponepage">إنشاء متجر</Dropdown.Item>
-                                        <Dropdown.Item href="/user/accountsettings">الصفحة الشخصية</Dropdown.Item>
-                                        <Dropdown.Item href="#">خروج</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
+                       <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
+                           <Dropdown.Item href="/loginpage">تسجيل الدخول</Dropdown.Item>
+                           <Dropdown.Item href="/signup">إنشاء حساب</Dropdown.Item>
+                           <Dropdown.Item href="/steponepage">إنشاء متجر</Dropdown.Item>
+                           <Dropdown.Item href="/user/:activepage">الصفحة الشخصية</Dropdown.Item>
+                           <Dropdown.Item href="*">خروج</Dropdown.Item>
+                       </Dropdown.Menu>
+                   </Dropdown>
                 </li>
                 </div>
                 </NavIte>
