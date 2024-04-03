@@ -28,9 +28,9 @@ function SearchBox() {
        onMouseLeave={handleMouseLeave}
        style={{
          backgroundColor: isHovered ? '#A87561' : 'transparent',
-         borderColor: '#A87561',
-         color: isHovered ? 'white' : '#A87561',
-      
+         borderColor: '#d7ae9e',
+         color: isHovered ? 'white' : '#d7ae9e',
+        
         }}
       >
         Search

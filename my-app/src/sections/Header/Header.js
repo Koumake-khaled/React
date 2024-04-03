@@ -49,7 +49,7 @@ const Header = ({ reloadnavbar }) => {
                                     <Dropdown>
                                         <Dropdown.Toggle variant="" id="dropdown-basic" >المزيد</Dropdown.Toggle >
     
-                                        <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
+                                        <Dropdown.Menu style={{backgroundColor:"#835948",textAlign:"right"}}>
                                         <Dropdown.Item href="/contact">تواصل معنا</Dropdown.Item>
                                         <Dropdown.Item href="/about">معلومات عنا</Dropdown.Item>
                                         </Dropdown.Menu>
@@ -68,7 +68,7 @@ const Header = ({ reloadnavbar }) => {
                                     <Dropdown.Toggle variant="" id="dropdown-basic" >الفئات
                                     </Dropdown.Toggle >
 
-                                    <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
+                                    <Dropdown.Menu style={{backgroundColor:"#835948",textAlign:"right"}}>
                                         <Dropdown.Item href="/loginpage">ملابس</Dropdown.Item>
                                         <Dropdown.Item href="/signup">فخار</Dropdown.Item>
                                         <Dropdown.Item href="/user/accountsettings">فن</Dropdown.Item>
@@ -118,7 +118,7 @@ const Header = ({ reloadnavbar }) => {
                            </svg>
                        </Dropdown.Toggle >
 
-                       <Dropdown.Menu style={{backgroundColor:"var(--color-primary)",textAlign:"right"}}>
+                       <Dropdown.Menu style={{backgroundColor:"#835948",textAlign:"right"}}>
                            <Dropdown.Item href="/loginpage">تسجيل الدخول</Dropdown.Item>
                            <Dropdown.Item href="/signup">إنشاء حساب</Dropdown.Item>
                            <Dropdown.Item href="/steponepage">إنشاء متجر</Dropdown.Item>

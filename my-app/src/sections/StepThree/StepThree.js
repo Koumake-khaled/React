@@ -191,7 +191,7 @@ const StepThree = () => {
     </div>
 </Form>
 <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'72px', textAlign: "right"}} dir="rtl">
-    <Link to="/user/:activepage">
+    <Link to="/stepfourpage">
     <PrimaryButtons>المتابعة</PrimaryButtons></Link>
     <Link to="/steptwopage">
       <SecondaryButtons>السابق</SecondaryButtons>
