@@ -30,6 +30,11 @@ const App = () => {
      <Route path="/contact" element={<Contact/>} />
      <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
      <Route path='/user/:activepage' element={<UserProfile/>} /> 
+     <Route path="/product/:prodid" 
+          element={
+            <ProductPage/>
+          }
+        />
      </Routes>
      </Container>
      <Footer />

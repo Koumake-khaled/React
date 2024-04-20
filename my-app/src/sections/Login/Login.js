@@ -25,14 +25,13 @@ function Login() {
     نسيت كلمة المرور؟
     </Text>
     </Link>
-      </Form.Group>
-
- <div className="flex justify-center items-end">
+    </Form.Group>
+    </Form>
+    <div style={{ display: "flex", justifyContent: "center", gap: "100px",marginTop:'72px', textAlign: "right"}} dir="rtl">
       <Link to="/">
         <PrimaryButtons controlId="loginButton" >تسجيل الدخول</PrimaryButtons>
       </Link>
       </div>
-    </Form>
     </SectioWrapper>
     </>
   );

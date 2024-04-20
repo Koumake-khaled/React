@@ -21,7 +21,7 @@ function SignUp() {
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>عنوان البريد الإلكتروني</Form.Label>
         <Form.Control type="email" placeholder="أدخل البريد الإلكتروني" style={{ textAlign: "right"}}/>
-        <Form.Text className="text-muted">
+        <Form.Text className="text-muted" style={{color:"#f3ebeb"}}>
         لن نشارك بريدك الإلكتروني أبدًا مع أي شخص آخر
         </Form.Text>
       </Form.Group>

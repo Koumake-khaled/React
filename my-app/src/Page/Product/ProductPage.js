@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import img1 from '../../ASSETS/Images/1.png'
-import img2 from '../../ASSETS/Images/2.png'
-import img3 from '../../ASSETS/Images/3.png'
-import img4 from '../../ASSETS/Images/4.png'
-import Navbar from '../../components/Navbar/Navbar'
-// import ProductsSlider from '../../components/ProductsSlider/ProductsSlider' 
+import Wedding from '../../aasets/imgase/Wedding.jpg'
+import kiddes from '../../aasets/imgase/kiddes.jpg'
+import meed from '../../aasets/imgase/meed.jpg'
+import {ProductsSlider} from '../../components/index'
 import './ProductPage.css'
 const ProductPage = () => {
     const { prodid } = useParams()
@@ -23,20 +21,20 @@ const ProductPage = () => {
             "Data": [
                 {
                     "ProductId": 1,
-                    "ProductName": "Product 1",
-                    "ProductDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    "ProductName": "بلوزة صيفي",
+                    "ProductDescription": "استمتع بأناقة الصيف مع بلوزة صيفية رائعة تجمع بين الأناقة والراحة. تصميمها المذهل والمبتكر يضفي لمسة من الجاذبية على إطلالتك في فصل الصيف. إنها مصنوعة من أقمشة خفيفة ومنعشة تسمح للهواء بالتداول بحرية، مما يوفر لك شعورًا بالانتعاش والراحة في الأيام الحارة. تتميز البلوزة بتفاصيلها الرائعة، مثل القصات العصرية والألوان الزاهية التي تعكس روح الصيف وتضفي إشراقًا على إطلالتك. بغض النظر عن أسلوبك الشخصي، ستجد بالتأكيد بلوزة تناسب ذوقك وتعكس شخصيتك المميزة",
                     "ProductImage": [
                         {
                             id: 1,
-                            image: img1
+                            image: Wedding
                         },
                         {
                             id: 2,
-                            image: img2
+                            image: kiddes
                         },
                         {
                             id: 3,
-                            image: img3
+                            image: meed
                         }
                     ],
                     "ProductCode": "P1",
@@ -68,27 +66,31 @@ const ProductPage = () => {
                     "ProductReviews": [
                         {
                             "ReviewId": 1,
-                            "Name": "Harshal Jain",
+                            "Name": "شيماء علي",
                             "Email": "",
                             "Rating": 5,
                             "Date": "2021-08-01",
-                            "Review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                            "Review": 
+                            "أنا مسرور جدًا بشرائي لهذه البلوزة الصيفية من متجر فرح. تصميمها جميل وأنيق، وتناسب الأجواء الحارة بشكل مثالي. النسيج خفيف ومريح على البشرة، مما يجعلها مثالية للارتداء في الأيام الحارة. اللون الزاهي والنمط العصري يضفيان لمسة رائعة على مظهري. القَصَّة متناسبة وتناسب القوام بشكل مريح، وتسمح بحرية الحركة. الجودة عالية، ويبدو أنها ستدوم لفترة طويلة"
+
+                            ,
                         },
                         {
                             "ReviewId": 2,
-                            "Name": "Viraj",
+                            "Name": "خديجة خالد",
                             "Email": "",
                             "Rating": 1,
                             "Date": "2021-08-01",
-                            "Review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                            "Review": 
+                            "إن البلوزة الصيفية هي قطعة أساسية في خزانة الملابس الصيفية. تصميمها الخفيف والمريح يسمح للهواء بالتداول ويساعد في الشعور بالانتعاش أثناء الأيام الحارة. إن الأقمشة الناعمة والمنعشة التي تستخدم في صنع البلوزة تجعلها مثالية للارتداء في الأماكن الحارة والرحلات الصيفية. إنها قطعة عملية وأنيقة في نفس الوقت.",
                         },
                         {
                             "ReviewId": 3,
-                            "Name": "Harshal Jain",
+                            "Name": "نور عبدالله",
                             "Email": "",
                             "Rating": 4,
                             "Date": "2021-08-01",
-                            "Review": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                            "Review": "أنا معجب بالبلوزة الصيفية لأسباب عدة. إن الأقمشة الخفيفة والمسامية تجعلها مريحة للارتداء في الأيام الحارة. تصميمها العصري والأنيق يضفي لمسة من الأناقة على إطلالة الصيف. إن تنوع الألوان والأنماط المتاحة يسمح للأفراد بالتعبير عن أسلوبهم الشخصي واختيار ما يناسبهم. البلوزة الصيفية هي خيار رائع للمظهر العصري والمريح في فصل الصيف",
                         }
                     ]
                 }
@@ -110,7 +112,7 @@ const ProductPage = () => {
 
     const [rating, setrating] = React.useState(0)
 
-// ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
     const products = [
         {
             "ProductId": 1,
@@ -119,15 +121,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img1
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img2
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -190,15 +192,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img2
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img1
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -261,15 +263,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img3
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img2
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -332,15 +334,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img1
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img2
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -403,15 +405,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img2
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img1
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -474,15 +476,15 @@ const ProductPage = () => {
             "ProductImage": [
                 {
                     id: 1,
-                    image: img3
+                    image: Wedding
                 },
                 {
                     id: 2,
-                    image: img2
+                    image: kiddes
                 },
                 {
                     id: 3,
-                    image: img3
+                    image: meed
                 }
             ],
             "ProductCode": "P1",
@@ -585,27 +587,24 @@ const ProductPage = () => {
         toast.success('Item added to cart')
     }
     return (
-        <div className='productpage'>
+        <div className='productpage' style={{ textAlign: "right"}} dir="rtl">
             {/* <h1>Product id is - {prodid}</h1>
             <p>
                 {JSON.stringify(productdata)}
             </p> */}
 
-            <Navbar reloadnavbar={reloadnavbar}/>
-
             <div className='pc1'>
                 <Link to='/'>
                     <button className='goback'>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        ارجع إلى
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                         </svg>
-                        Go Back
                     </button>
                 </Link>
 
 
                 <div className='c11'>
-                    {/* ppppp */}
                     <div className='imgset'>
                         {
                             imageset && imageset?.map((item, index) => {
@@ -629,13 +628,12 @@ const ProductPage = () => {
                         <img src={activeimg.image} alt="" />
                     </div>
                 </div>
-{/* vvvvvvvvvvv */}
+
                 <div className='c12'>
-                    <h1 className='head1'>{productdata.ProductName}</h1>
+                    <h1 className='head1' style={{color:'var(--color-darkest)'}}>{productdata.ProductName}</h1>
                     <div className='c121'>
                         <p className='price'>
                             ${productdata.SalesPrice * count}
-                            {/* alhasm */}
                             <span>${productdata.ProductPrice * count}</span>
                         </p>
 
@@ -647,7 +645,7 @@ const ProductPage = () => {
                                     }
                                 }}
                             >-</button>
-                            <p>{count}</p>
+                            <p style={{color:'var(--color-darkest)'}}>{count}</p>
                             <button
                                 onClick={() => {
                                     if (count < 10) {
@@ -664,20 +662,19 @@ const ProductPage = () => {
                                 addtocart()
                             }}
                         >
-                            Add to Cart
+                           أضف إلى السلة
                         </button>
                         <button
                             onClick={() => {
                                 alert('Buy Now')
                             }}
                         >
-                            Buy Now
+                           اشتري الآن
                         </button>
                     </div>
                 </div>
             </div>
-
-            {/* <div className='pc2'>
+            <div className='pc2'>
                 {
                     showreview ?
                         <div className='tabs'>
@@ -689,7 +686,7 @@ const ProductPage = () => {
                                         setshowreview(false)
                                     }
                                 }
-                            >Description</button>
+                            >الوصف</button>
                             <button
                                 className='active'
                                 onClick={
@@ -697,7 +694,7 @@ const ProductPage = () => {
                                         setshowreview(true)
                                     }
                                 }
-                            >Reviews</button>
+                            >التعليقات</button>
                         </div>
                         :
                         <div className='tabs'>
@@ -709,7 +706,7 @@ const ProductPage = () => {
                                     }
                                 }
                             >
-                                Description
+                                الوصف
                             </button>
 
                             <button
@@ -720,7 +717,7 @@ const ProductPage = () => {
                                         setshowreview(true)
                                     }
                                 }
-                            >Reviews</button>
+                            >التعليقات</button>
                         </div>
                 }
                 {
@@ -728,22 +725,22 @@ const ProductPage = () => {
                         <div className='reviewcont'>
                             <form>
                                 <div className='fromgroup'>
-                                    <label htmlFor="">Name</label>
+                                    <label htmlFor="">الاسم</label>
                                     <input type="text" />
                                 </div>
 
                                 <div className='fromgroup'>
-                                    <label htmlFor="">Email</label>
+                                    <label htmlFor="">الإيميل</label>
                                     <input type="email" />
                                 </div>
 
                                 <div className='fromgroup'>
-                                    <label htmlFor="">Review</label>
+                                    <label htmlFor="">مراجعة</label>
                                     <textarea name="" id="" cols="30" rows="10"></textarea>
                                 </div>
 
                                 <div className='fromgroup'>
-                                    <label htmlFor="">Rating</label>
+                                    <label htmlFor="">تقييم</label>
                                     <div className='rating'>
                                         <div className='star'
                                             onClick={() => {
@@ -826,18 +823,18 @@ const ProductPage = () => {
                                     </div>
                                 </div>
 
-                                <button>Submit</button>
+                                <button>إرسال</button>
                             </form>
 
 
                             <div className='allreview'>
-                                <h1 className='head1'>Product Reviews</h1>
+                                <h1 className='head1'>تعليقات على المنتج</h1>
                                 {productdata.ProductReviews &&
                                     productdata.ProductReviews.map((item, index) => {
                                         return (
                                             <div className='review'>
                                                 <div className='reviewhead'>
-                                                    <p className='name'>{item.Name}</p>
+                                                    <p className='name' >{item.Name}</p>
                                                     <div className='rating1'>
                                                         <div className='star'
 
@@ -918,7 +915,7 @@ const ProductPage = () => {
                                                         </div>
                                                     </div>
                                                     <span className='date'>{item.Date}</span>
-                                                </div>
+                                                </div> 
 
                                                 <div className='reviewbody'>
                                                     {item.Review}
@@ -934,16 +931,13 @@ const ProductPage = () => {
                             {productdata.ProductDescription}
                         </p>
                 }
-            </div> */}
-
-            {/* <div className='slidercont'>
-                <ProductsSlider products={products} categoryname='Related Products' />
             </div>
             <div className='slidercont'>
-                <ProductsSlider products={products} categoryname='Explore More' />
-            </div> */}
-            {/* <Footer1 />
-            <Footer2 /> */}
+                <ProductsSlider products={products} categoryname='منتجات ذات صله' />
+            </div>
+            <div className='slidercont'>
+                <ProductsSlider products={products} categoryname='استكشاف المزيد' />
+            </div>
         </div>
     )
 }

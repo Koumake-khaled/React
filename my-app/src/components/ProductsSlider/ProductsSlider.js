@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import ProductCard from '../ProductCard/ProductCard';
+import StoreItem from '../CardStore/StoreItem';
 import './ProductsSlider.css'
 const ProductsSlider = ({ products, categoryname }) => {
 
@@ -62,7 +62,7 @@ const ProductsSlider = ({ products, categoryname }) => {
             >
                 {products.map((item,index)=>{
                     return (
-                        <ProductCard data={item} key={index} />
+                        <StoreItem data={item} key={index} />
                     )
                 })}
             </Carousel>

@@ -83,8 +83,8 @@ const StepFive = () => {
     <div id="recaptcha-container"></div>
     {
       user ? (
-      <h2 style={{textAlign: 'center',color: 'white',fontWeight: 'medium',fontSize: '2rem'}}>
-      👍 Login Success
+      <h2 style={{textAlign: 'center',color: 'white',fontWeight: 'medium',fontSize: '1.5rem'}}>
+      👍 بنجاح suoqol تم تفعيل المصادقة الثنائية على منصة 
     </h2>
       ):(
       <div id="recaptcha-container"></div> 
@@ -93,13 +93,13 @@ const StepFive = () => {
     <div style={{width: '20rem',display: 'flex',flexDirection: 'column',gap: '1rem',borderRadius: '0.5rem',padding: '1rem',
     }}>
       <h1 style={{
-    textAlign: 'center',lineHeight: 'normal',color: 'white',fontWeight: 'medium',fontSize: '2rem',marginBottom: '1rem'}}>
-        Welcome to CODE A PROGRAM
+    textAlign: 'center',lineHeight: 'normal',color: 'white',fontWeight: 'medium',fontSize: '1.5rem',marginBottom: '1rem'}}>
+        قم بأعداد المصادقة الثنائية عبر الرسائل القصيرة ادخل رقم الهاتف الذي تستخدمه لتلقي الرمز عند تسجيل الدخول الى حسابك 
       </h1>
      {
-      showOTP ? ( 
+      !showOTP ? ( 
       <>
-      <div style={{backgroundColor: 'white',color: '#10B981', width: 'fit-content',marginLeft: 'auto', marginRight: 'auto', padding: '0.5rem',borderRadius: '50%'
+      <div style={{backgroundColor: 'white',color: '#A87561', width: 'fit-content',marginLeft: 'auto', marginRight: 'auto', padding: '0.5rem',borderRadius: '50%'
 }}>
         <BsFillShieldLockFill size={30}/>
       </div>
@@ -112,29 +112,35 @@ const StepFive = () => {
                     textAlign: 'center'
                   }}
                 >
-                  Enter your OTP
+                 أدخل كلمة المرور الخاصة بك
                 </label>
-               <OtpInput
-      value={otp}
-      onChange={setOtp}
-      numInputs={6}
-      type='number'
-      renderSeparator={<span>-</span>}
-      renderInput={(props) => <input {...props} />}
-      style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        gap: '0.5rem',marginRight: '0 !important',
-        flex: '1',
-        paddingTop: '1.25rem',
-        paddingBottom: '1.25rem',
-        outline: 'none'
-      }}
-    />
+                <OtpInput
+  value={otp}
+  onChange={setOtp}
+  numInputs={6}
+  type='number'
+  renderSeparator={<span></span>}
+  renderInput={(props) => <input {...props} />}
+  containerStyle={{
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    paddingTop: '1.25rem',
+    paddingBottom: '1.25rem',
+    outline: 'none'
+  }}
+  inputStyle={{
+    width: '2.5rem',
+    height: '2.5rem',
+    fontSize: '1.5rem',
+    padding: '0.5rem',
+    textAlign: 'center'
+  }}
+/>
      <button  onClick={onOTPVerify}
                 
                 style={{
-                  backgroundColor: '#047857',
+                  backgroundColor: '#A87561',
                   width: '100%',
                   display: 'flex',
                   gap: '0.25rem',
@@ -154,7 +160,7 @@ const StepFive = () => {
                   marginTop: '0.25rem',
                   animation: 'spin 1s linear infinite'
                 }} />  }
-                  <span>Verify OTP</span>
+                  <span>(OTP)التحقق من كلمة المرور لمرة واحدة</span>
     </button>
       </>) :(
        <>
@@ -178,7 +184,7 @@ const StepFive = () => {
                      textAlign: 'center'
                    }}
                  >
-                   Verify your phone number
+                   اكد على رقم هاتفك 
                  </label>
             <PhoneInput country={"in"} value={ph} onChange={setPh}
             style={{
@@ -207,7 +213,7 @@ const StepFive = () => {
                    marginTop: '0.25rem',
                    animation: 'spin 1s linear infinite'
                  }} />  }
-                   <span>Send via SMS</span>
+                   <span>إرسال عبر الرسائل القصيرة</span>
      </button>
        </>
       )

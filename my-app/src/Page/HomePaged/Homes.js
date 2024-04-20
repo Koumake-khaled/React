@@ -448,10 +448,10 @@ const Homes = () => {
       <Product_Sidebar />
 
       <div className='slidercont'>
-        <ProductsSlider products={products} categoryname='Related Products' />
+        <ProductsSlider products={products} categoryname='منتجات ذات صله' />
       </div>
       <div className='slidercont'>
-        <ProductsSlider products={products} categoryname='Explore More' />
+        <ProductsSlider products={products} categoryname='استكشاف المزيد' />
       </div>
     
     </div>

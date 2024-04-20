@@ -60,9 +60,7 @@ const Header = ({ reloadnavbar }) => {
       <NavIte>
           <Link to="/"  className="nav-link">الصفحة الرئيسية</Link>
            </NavIte>
-  <NavIte>
-           <Link to="/#" className="nav-link">المفضلات </Link> </NavIte>
-
+           
            <li>
                       <Dropdown style={{padding:"2px",margin:"5px"}} >
                                     <Dropdown.Toggle variant="" id="dropdown-basic" >الفئات
